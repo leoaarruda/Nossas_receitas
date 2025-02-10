@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Sevillana&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #bcc584;
+    --secundary-color: #5a5e3f;
+    --tertiary-color: #FFF;
+}
+
+.body {
+    background-color: var(--primary-color);
+}
+
+.hero__banner {
+    position: relative;
+    width: 100lvw;
+    height: 100lvh;
+    background-image: url(../img/Balcao\ de\ frutas\ e\ legumes.png);
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: var(--tertiary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero__banner__text {
+    position: absolute;
+    font-family: "Sevillana", serif;
+    text-transform: capitalize;
+    font-weight: 400;
+    font-size: 6.5rem;
+    margin-top: 18rem;
+}
+
+.recipes {
+    text-align: center;
+    font-family: "Sevillana", serif;
+    text-transform: capitalize;
+    font-weight: 400;
+    font-size: 2.5rem;
+    
+}
+
+.recipes__title {
+    display: inline-block;
+    text-align:  center;
+    padding-top: 2rem;
+    color: #5a5e3f;
+    width: 35%;
+    border-bottom: 1px solid #5a5e3f;
+    letter-spacing: 1px;
+}
