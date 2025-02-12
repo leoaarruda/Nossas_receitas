@@ -10,6 +10,8 @@
     --primary-color: #bcc584;
     --secundary-color: #5a5e3f;
     --tertiary-color: #FFF;
+    --cards-color: #faebd7;
+    --font-title: 
 }
 
 .body {
@@ -44,7 +46,6 @@
 .main {
     text-align: center;
     font-family: "Sevillana", serif;
-
 }
 
 .main__title {
@@ -60,30 +61,53 @@
 }
 
 .cards {
-    background-color: #faebd7;
+    background-color: var(--cards-color);
     border-radius: 1rem;
-    border: 2px solid var(--secundary-color);
+    outline: 2px solid var(--secundary-color);
     width: 80lvw;
-    height: 82lvh;
     margin: 0 auto;
+    padding-bottom: 2rem;
     display: flex;
     justify-content: space-evenly;
-    /* align-items: center; */
+    flex-wrap: wrap;
+    gap: .2rem;
+    flex-grow: 1;
 }
 
 .cards__card {
-    border: 2px solid var(--secundary-color);
-    margin-top: 1.5rem;
-    border-radius: 1rem;
-    width: 25%;
+    background-color: var(--cards-color);
+    margin-top: 2.5rem;
     height: 60%;
-}
-
-.card__img {
-    border-radius: 1rem;
-}
-.cards__card {
     font-family: "Raleway", serif;
     font-weight: 500;
-    font-style: normal;
+    border-radius: 1rem;
+    box-shadow: -7px 0px 14px 0px rgba(0,0,0,0.53);
 }
+
+.cards__card:hover {
+    transform: scale(1.1);
+    transition: .4s ;
+} 
+
+.card__img {
+    width: 99.6%;
+    margin-bottom: -4px;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.card__text {
+    border: 2px solid var(--secundary-color);
+    background-color: va;
+    border-radius: 0 0 1rem 1rem;
+    border-top: none;
+    width: 99.5%;
+    height: 22.5%;
+    margin: 0 auto;
+    padding: 0.5rem 0;
+}
+
+.card__text a {
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+
