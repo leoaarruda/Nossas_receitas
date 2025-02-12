@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Sevillana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Sevillana&display=swap');
 
 * {
     margin: 0;
@@ -13,6 +13,7 @@
 }
 
 .body {
+    overflow-x: hidden;
     background-color: var(--primary-color);
 }
 
@@ -40,21 +41,49 @@
     margin-top: 18rem;
 }
 
-.recipes {
+.main {
     text-align: center;
     font-family: "Sevillana", serif;
-    text-transform: capitalize;
-    font-weight: 400;
-    font-size: 2.5rem;
-    
+
 }
 
-.recipes__title {
+.main__title {
+    text-transform: capitalize;
     display: inline-block;
-    text-align:  center;
+    text-align: center;
     padding-top: 2rem;
-    color: #5a5e3f;
+    color: var(--secundary-color);
     width: 35%;
-    border-bottom: 1px solid #5a5e3f;
+    font-weight: 400;
+    font-size: 2.5rem;
     letter-spacing: 1px;
+}
+
+.cards {
+    background-color: #faebd7;
+    border-radius: 1rem;
+    border: 2px solid var(--secundary-color);
+    width: 80lvw;
+    height: 82lvh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    /* align-items: center; */
+}
+
+.cards__card {
+    border: 2px solid var(--secundary-color);
+    margin-top: 1.5rem;
+    border-radius: 1rem;
+    width: 25%;
+    height: 60%;
+}
+
+.card__img {
+    border-radius: 1rem;
+}
+.cards__card {
+    font-family: "Raleway", serif;
+    font-weight: 500;
+    font-style: normal;
 }
