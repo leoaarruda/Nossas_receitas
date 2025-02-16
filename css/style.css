@@ -85,7 +85,7 @@ html {
     font-family: "Raleway", serif;
     font-weight: 500;
     border-radius: 1rem;
-    box-shadow: -7px 0px 14px 0px rgba(0, 0, 0, 0.53);
+    box-shadow: -7px 0px 14px 0px rgba(0, 0, 0, 0.45);
     animation: fade linear both;
     animation-timeline: view();
     animation-range: entry 1% cover 30%;
@@ -103,22 +103,23 @@ html {
 
 
 .cards__card:hover {
-    transform: scale(1.05);
-    transition: .4s;
+    transform: scale(1.04);
+    transition: .3s ease-in;
 }
 
 .card__img {
-    width: 99.6%;
+    width: 100%;
     margin-bottom: -4px;
     border-radius: 1rem 1rem 0 0;
+    /* border: 1.5px solid var(--cards-color); */
+    border-bottom: none;
 }
 
 .card__text {
-    border: 2px solid var(--secundary-color);
+    border: 1.5px solid var(--secundary-color);
     background-color: var(--cards-color);
     border-radius: 0 0 1rem 1rem;
     border-top: none;
-    width: 99.5%;
     height: 22.5%;
     padding: 0.5rem 0;
     text-align: right;
