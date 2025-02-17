@@ -4,4 +4,6 @@
 ## O que já foi feito?
     Criei uma seção de cards onde fica em destaque uma imagem ilustrativa da receita segindo do link de origem mostrando o preparo.
 
+    Foi aplicado efeitos de hover e transiton nos cards.
+
     Em breve farei um popover com os ingredientes e modo de preparo.
