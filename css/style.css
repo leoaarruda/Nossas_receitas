@@ -19,6 +19,26 @@
     overflow-x: hidden;
 }
 
+:popover-open {
+    outline: 2px solid var(--secundary-color);
+    width: 40dvw;
+    height: 50dvh;
+    padding: 0 20px;
+    border-radius: 12px;
+    text-align: left;
+    line-height: 2rem;
+    margin: 0 auto;
+    padding: 1rem 0 0 1.5rem;
+    align-self: center;
+    border: none;
+    white-space: normal;
+    overflow-y: auto;
+}
+
+.strong {
+    font-weight: 900;
+}
+
 .hero__banner {
     position: relative;
     width: 100lvw;
@@ -48,13 +68,11 @@
     font-family: var(--font-title);
     background-color: var(--primary-color);
     height: 100dvh;
-
 }
 
 .main__title {
     text-transform: capitalize;
     display: inline-block;
-    text-align: center;
     padding-top: 1rem;
     color: var(--secundary-color);
     width: 35%;
@@ -65,7 +83,7 @@
 
 .cards {
     background-color: var(--cards-color);
-    outline: 2px solid var(--secundary-color);
+    border: 2kpx solid var(--secundary-color);
     border-radius: 1rem;
     max-width: 75%;
     max-height: 82dvh;
@@ -90,12 +108,13 @@
     box-shadow: -7px 0px 14px 0px rgba(0, 0, 0, 0.45);
     animation: fade linear both;
     animation-timeline: view();
-    animation-range: entry 1% cover 25%;
+    animation-range: entry 1% cover 40%;
+    transition: transform .5s ease;
 }
 
 .cards__card:hover {
     transform: scale(1.04);
-    transition: .3s ease-in;
+    transition: .3s linear;
 }
 
 @keyframes fade {
@@ -118,20 +137,43 @@
 .card__text {
     border-top: 1px solid var(--secundary-color);
     background-color: var(--cards-color);
+    color: var(--secundary-color);
     border-radius: 0 0 1rem 1rem;
-    height: 22.5%;
-    padding: 0.5rem 0;
-    text-align: right;
+    height: 24%;
 }
 
 .card__text__p {
-    font-size: .8rem;
-    text-align: left;
-    margin: 0 0 .2rem .5rem;
+    font-size: .92rem;
+    font-weight: 600;
+    margin: .3rem 0 .5rem;
+    /* text-align: left;
+    margin-left: 1rem; */
 }
 
-.card__text__a {
-    font-size: .7rem;
+.card__actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card__btn {
+    padding: .2rem .5rem;
+    color: var(--secundary-color);
+    font-weight: 600;
+    background-color: var(--primary-color);
+    border: none;
+    outline: 1.5px solid var(--secundary-color);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card__actions__a {
+    font-size: .75rem;
+    font-weight: 600;
     text-decoration: none;
-    margin-right: 1rem;
+    color: var(--secundary-color);
+}
+
+.card__btn:hover, .card__actions__a:hover {
+    opacity: 0.8;
 }
