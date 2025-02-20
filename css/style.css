@@ -142,7 +142,7 @@
     height: 24%;
 }
 
-.card__text__p {
+.card__text__title {
     font-size: .92rem;
     font-weight: 600;
     margin: .3rem 0 .5rem;
@@ -150,10 +150,22 @@
     margin-left: 1rem; */
 }
 
+.card__text__title::first-letter {
+    text-transform: uppercase;
+}
+
 .card__actions {
     display: flex;
     align-items: center;
     justify-content: space-around;
+}
+
+.popover {
+    text-align: right;
+}
+
+.popover__text {
+    text-align: left;
 }
 
 .card__btn {
@@ -165,6 +177,15 @@
     outline: 1.5px solid var(--secundary-color);
     border-radius: 5px;
     cursor: pointer;
+}
+
+.card__btn::first-letter {
+    text-transform: uppercase;
+}
+
+.popover__btn {
+    margin: 1rem 2rem 1rem 0;
+    width: 5rem;
 }
 
 .card__actions__a {

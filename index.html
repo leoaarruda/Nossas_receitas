@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <title>Nossas Receitas</title>
 </head>
 
 <body class="body">
@@ -15,29 +15,37 @@
     </header>
 
     <main class="main">
+
         <div class="main__title">
             <h2>Nossas Receitas</h2>
         </div>
+
         <section class="cards">
             <article class="cards__card">
                 <img class="card__img" src="img/pizza.png" alt="Imagem de uma pizza">
                 <div class="card__text">
-                    <p class="card__text__p">Pizza de grão de bico</p>
+                    <h3 class="card__text__title">pizza de grão de bico</h3>
                     <div class="card__actions">
                         <button class="card__btn" type="button" popovertarget="1">ver receita</button>
-                        <div id="1" popover>
-                            <span class="strong">ingredientes (1 pizza grande ou duas pequenas):</span>
-                            <p>> 200g Grão-de-bico já hidratado (uma noite).</p>
-                            <p>> 170g Água (a água do molho vai para parte).</p>
-                            <span class="strong">modo de preparo:</span>
-                            <p>> Escorra o grão-de-bico e tritura junto com os 170g de água.</p>
-                            <p>> Forme a pizza com a ajuda de uma colher sobre papel de forno untado.</p>
-                            <p>> Forno cerca de 15 min a 190° (com ar, se possível).</p>
-                            <p>> Adicione suas coberturas favoritas e ao forno!</p>
+                        <div class="popover" id="1" popover>
+                            <div class="popover__text">
+                                <span class="strong">Ingredientes (1 pizza grande ou duas pequenas):</span>
+                                <p>> 200g Grão-de-bico já hidratado (uma noite).</p>
+                                <p>> 170g Água (a água do molho vai para parte).</p>
+                                <span class="strong">Modo de preparo:</span>
+                                <p>> Escorra o grão-de-bico e tritura junto com os 170g de água.</p>
+                                <p>> Forme a pizza com a ajuda de uma colher sobre papel de forno untado.</p>
+                                <p>> Forno cerca de 15 min a 190° (com ar, se possível).</p>
+                                <p>> Adicione suas coberturas favoritas e ao forno!</p>
+                            </div>
+                            <div>
+                                <button class="card__btn popover__btn" popovertarget="1">fechar</button>
+                            </div>
                         </div>
                         <a class="card__actions__a"
                             href="https://www.instagram.com/reel/DAwDSPNxFTr/?igsh=enhsc2ZuZm5mMnJi" target="_blank"
-                            aria-label="link da receita">Link da receita</a>
+                            rel="noopener noreferrer" aria-label="link da receita">link da receita
+                        </a>
                     </div>
                 </div>
             </article>
@@ -46,18 +54,24 @@
                 <img class="card__img" src="img/bolinhos de arroz redondos e fritos.png"
                     alt="Imagem bolinhos de arroz fritos">
                 <div class="card__text">
-                    <p class="card__text__p">Bolinho de arroz</p>
+                    <h3 class="card__text__title">bolinho de arroz</h3>
                     <div class="card__actions">
                         <button class="card__btn" type="button" popovertarget="2">ver receita</button>
-                        <div id="2" popover>
-                            <span class="strong">ingredientes: </span>
-                            <p>> 2 xícaras de arroz cozido.</p>
-                            <p>> 2 ovos.</p>
-                            <span class="strong">modo de preparo:</span>
-                            <p>> misture bem o arroz com os ovos e depois é só fritar!</p>
+                        <div class="popover" id="2" popover>
+                            <div class="popover__text">
+                                <span class="strong">Ingredientes: </span>
+                                <p>> 2 xícaras de arroz cozido.</p>
+                                <p>> 2 ovos.</p>
+                                <span class="strong">modo de preparo:</span>
+                                <p>> Misture bem o arroz com os ovos e depois é só fritar!</p>
+                            </div>
+                            <div>
+                                <button class="card__btn popover__btn" popovertarget="2">fechar</button>
+                            </div>
                         </div>
                         <a class="card__actions__a" href="https://youtube.com/shorts/oW5LI4p-q5I?si=NnzlWKyfpjIaRh3r"
-                            target="_blank" aria-label="Link da receita">Link da receita</a>
+                            target="_blank" rel="noopener noreferrer" aria-label="Link da receita">link da receita
+                        </a>
                     </div>
                 </div>
             </article>
@@ -65,34 +79,40 @@
             <article class="cards__card">
                 <img class="card__img" src="img/lasanha.png" alt="Imagem de uma lasanha">
                 <div class="card__text">
-                    <p class="card__text__p">Lasanha de batata</p>
+                    <h3 class="card__text__title">lasanha de batata</h3>
                     <div class="card__actions">
                         <button class="card__btn" type="button" popovertarget="3">ver receita</button>
-                        <div id="3" popover>
-                            <span class="strong">ingredientes:</span>
-                            <p> > 2kg de batatas descascadas em rodelas médias</p>
-                            <p> > 1 cubo de caldo de galinha</p>
-                            <p> > 200g de presunto em fatias</p>
-                            <p> > 200g de queijo muçarela em fatias</p>
-                            <p> > Orégano a gosto</p>
-                            <p> > 50g de queijo parmesão ralado</p>
-                            <p> > 1/2 xícara (chá) de farinha de rosca</p>
-                            <p> > Margarina para untar</p>
-                            <span class="strong">Modo de preparo:</span>
-                            <p> > Em uma panela, coloque as batatas, o caldo de galinha, cubra com água, leve ao fogo
-                                médio
-                                e deixe cozinhar por 5 minutos após levantar fervura.</p>
-                            <p> > Escorra e reserve.</p>
-                            <p> > Enquanto isso, no liquidificador bata todos os ingredientes do creme.</p>
-                            <p> > Em um refratário médio untado, intercele camadas de creme de alho, de batatas, de
-                                presunto, de creme de alho novamente, de muçarela e de orégano, polvilhando.</p>
-                            <p> > Polvilhe com o queijo parmesão misturado com a farinha de rosca e então leve ao forno
-                                médio, preaquecido, por 15 minutos.</p>
-                            <p> > Retire do forno e sirva em seguida.</p>
+                        <div class="popover" id="3" popover>
+                            <div class="popover__text">
+                                <span class="strong">Ingredientes:</span>
+                                <p> > 2kg de batatas descascadas em rodelas médias</p>
+                                <p> > 1 cubo de caldo de galinha</p>
+                                <p> > 200g de presunto em fatias</p>
+                                <p> > 200g de queijo muçarela em fatias</p>
+                                <p> > Orégano a gosto</p>
+                                <p> > 50g de queijo parmesão ralado</p>
+                                <p> > 1/2 xícara (chá) de farinha de rosca</p>
+                                <p> > Margarina para untar</p>
+                                <span class="strong">Modo de preparo:</span>
+                                <p> > Em uma panela, coloque as batatas, o caldo de galinha, cubra com água, leve ao
+                                    fogo médio e deixe cozinhar por 5 minutos após levantar fervura.</p>
+                                <p> > Escorra e reserve.</p>
+                                <p> > Enquanto isso, no liquidificador bata todos os ingredientes do creme.</p>
+                                <p> > Em um refratário médio untado, intercele camadas de creme de alho, de batatas, de
+                                    presunto, de creme de alho novamente, de muçarela e de orégano, polvilhando.</p>
+                                <p> > Polvilhe com o queijo parmesão misturado com a farinha de rosca e então leve ao
+                                    forno
+                                    médio, preaquecido, por 15 minutos.</p>
+                                <p> > Retire do forno e sirva em seguida.</p>
+                            </div>
+                            <div>
+                                <button class="card__btn popover__btn" popovertarget="3">fechar</button>
+                            </div>
                         </div>
                         <a class="card__actions__a"
                             href="https://www.terra.com.br/vida-e-estilo/degusta/receitas/lasanha-de-batata-com-creme-de-alho-cremosa-simples-e-pratica,51ac5c6a46656f458348d08930e1d5d04mynr8da.html"
-                            target="_blank" aria-label="Link da receita">Link da receita</a>
+                            target="_blank" rel="noopener noreferrer" aria-label="Link da receita">link da receita
+                        </a>
                     </div>
                 </div>
             </article>
@@ -100,22 +120,28 @@
             <article class="cards__card">
                 <img class="card__img" src="img/torcida.png" alt="Imagem do salgadinho torcida">
                 <div class="card__text">
-                    <p class="card__text__p">Salgadinho Torcida</p>
+                    <h3 class="card__text__title">salgadinho Torcida</h3>
                     <div class="card__actions"">
                         <button class=" card__btn" type="button" popovertarget="4">ver receita</button>
-                        <div id="4" popover>
-                            <span class="strong">ingredientes: </span>
-                            <p> > 1 Xícara e 1/2 de farinha de trigo.</p>
-                            <p> > 2 Colheres de margarin ou manteiga.</p>
-                            <p> > 50ml de água.</p>
-                            <span class="strong">modo de preparo:</span>
-                            <p> > misture bem o trigo com água e depois coloque a margarina ou manteiga.</p>
-                            <p> > abra a massa e com um cortador corte a massa em tiras.</p>
-                            <p> > faça de pouco a pouco.</p>
-                            <p> > depois de frito temperar com sal e ou temperos da sua preferência.</p>
+                        <div class="popover" id="4" popover>
+                            <div class="popover__text">
+                                <span class="strong">Ingredientes: </span>
+                                <p> > 1 Xícara e 1/2 de farinha de trigo.</p>
+                                <p> > 2 Colheres de margarin ou manteiga.</p>
+                                <p> > 50ml de água.</p>
+                                <span class="strong">Modo de preparo:</span>
+                                <p> > Misture bem o trigo com água e depois coloque a margarina ou manteiga.</p>
+                                <p> > Abra a massa e com um cortador corte a massa em tiras.</p>
+                                <p> > Faça de pouco a pouco.</p>
+                                <p> > Depois de frito temperar com sal e ou temperos da sua preferência.</p>
+                            </div>
+                            <div>
+                                <button class="card__btn popover__btn" popovertarget="4">fechar</button>
+                            </div>
                         </div>
                         <a class="card__actions__a" href="https://youtu.be/tzR3FEyHJbA?si=k93Dzx84UTRFBarO"
-                            target="_blank" aria-label="Link da receita">Link da receita</a>
+                            target="_blank" rel="noopener noreferrer" aria-label="Link da receita">link da receita
+                        </a>
                     </div>
                 </div>
             </article>
@@ -123,26 +149,30 @@
             <article class="cards__card">
                 <img class="card__img" src="img/cuscuz.jpg" alt="Imagem cuscuz com queijo">
                 <div class="card__text">
-                    <p class="card__text__p">Cuscuz frito com queijo</p>
+                    <h3 class="card__text__title">cuscuz frito com queijo</h3>
                     <div class="card__actions">
                         <button class="card__btn" type="button" popovertarget="5">ver receita</button>
                         <div id="5" popover>
-                            <span class="strong">ingredientes:</span>
-                            <p> > leite.</p>
-                            <p> > cuscuz.</p>
-                            <p> > manteiga.</p>
-                            <p> > no vídeo da receita não foi disponibilizado a quantidade de cada ingrediente.</p>
-                            <span class="strong">modo de preparo:</span>
-                            <p> > misture o cuscuz no leite e manteiga até engroçar e descolar da panela.</p>
-                            <p> > depois adicione o queijo com o fogo ainda ligado.</p>
-                            <p> > quando o queijo derreter e ficar tudo homogênio coloque em uma travessa untada com
+                            <span class="strong">Ingredientes:</span>
+                            <p> > Leite.</p>
+                            <p> > Cuscuz.</p>
+                            <p> > Manteiga.</p>
+                            <p> > No vídeo da receita não foi disponibilizado a quantidade de cada ingrediente.</p>
+                            <span class="strong">Modo de preparo:</span>
+                            <p> > Misture o cuscuz no leite e manteiga até engroçar e descolar da panela.</p>
+                            <p> > Depois adicione o queijo com o fogo ainda ligado.</p>
+                            <p> > Quando o queijo derreter e ficar tudo homogênio coloque em uma travessa untada com
                                 azeite,
                                 cubra e deixe na geladeira por 30 min.</p>
-                            <p> > depois desenforme e corte em tirar ou em cubos.</p>
+                            <p> > Depois desenforme e corte em tirar ou em cubos.</p>
+                            <div>
+                                <button class="card__btn popover__btn" popovertarget="5">fechar</button>
+                            </div>
                         </div>
                         <a class="card__actions__a"
                             href="https://www.instagram.com/reel/DBhR81FvEt-/?igsh=cWZmMjFnMnZ1aG9y" target="_blank"
-                            aria-label="Link da receita">Link da receita</a>
+                            rel="noopener noreferrer" aria-label="Link da receita">link da receita
+                        </a>
                     </div>
                 </div>
             </article>
@@ -150,18 +180,24 @@
             <article class="cards__card">
                 <img class="card__img" src="img/rap.png" alt="Imagem trouxinha de rap">
                 <div class="card__text">
-                    <p class="card__text__p">Trouxinha de rap</p>
+                    <h3 class="card__text__title">trouxinha de rap</h3>
                     <div class="card__actions">
-                        <button class="card__btn type=" button" popovertarget="6">ver receita</button>
-                        <div id="6" popover>
-                            <span class="strong">modo de preparo: </span>
-                            <p> > Pegue o rap colque em uma tigela redonda que possoa ir ao forno, coloque o rap forando
-                                o inteiror e em seguida coloque no forno até ficar firme, deixe esfriar e recheei com o
-                                que quiser. </p>
+                        <button class="card__btn" type="button" popovertarget="6">ver receita</button>
+                        <div class="popover" id="6" popover>
+                            <div class="popover__text">
+                                <span class="strong">Modo de preparo: </span>
+                                <p> > Pegue o rap colque em uma tigela redonda que possoa ir ao forno.</p>
+                                <p> > Coloque o rapforando o inteiror e em seguida coloque no forno até ficar firme</p>
+                                <p>> Deixe esfriar e recheei com oque quiser.</p>
+                            </div>
+                            <div>
+                                <button class="card__btn popover__btn" popovertarget="6">fechar</button>
+                            </div>
                         </div>
                         <a class="card__actions__a"
                             href="https://www.instagram.com/reel/DCJq1IWROKk/?igsh=YTZ0aDFqbmp6ZTNk" target="_blank"
-                            aria-label="Link da receita">Link da receita</a>
+                            rel="noopener noreferrer" aria-label="Link da receita">link da receita
+                        </a>
                     </div>
                 </div>
             </article>
@@ -169,27 +205,35 @@
             <article class="cards__card">
                 <img class="card__img" src="img/pastel.png" alt="Imagem Salgado de frango com queijo">
                 <div class="card__text">
-                    <p class="card__text__p">Salgado de frango com queijo</p>
+                    <h3 class="card__text__title">salgado de frango com queijo</h3>
                     <div class="card__actions">
                         <button class="card__btn" type="button" popovertarget="7">ver receita</button>
-                        <div id="7" popover>
-                            <span class="strong">ingredientes:</span>
-                            <p> > 120g de peito de frango cru.</p>
-                            <p> > 30g de requeijão light.</p>
-                            <p> > 30g de queijo muçarela.</p>
-                            <p> > 5g de queijo parmesão ralado.</p>
-                            <span class="strong">modo de preparo:</span>
-                            <p> > processe o frango e acrescente os temperos da sua preferência.</p>
-                            <p> > abra uma papel filme e coloque o frango já moído fazendo como se fosse uma massa.</p>
-                            <p> > recheei com o que quiser, mas nessa receita leva requeijão light, muçarela e tomate e
-                                orégano </p>
-                            <span class="strong"></span>
-                            <p> > feche bem a massa para o queijo não vazar pelos lados.</p>
-                            <p> > leve na air fryer por 20 min a 200°</p>
+                        <div class="popover" id="7" popover>
+                            <div class="popover__text">
+                                <span class="strong">Ingredientes:</span>
+                                <p> > 120g de peito de frango cru.</p>
+                                <p> > 30g de requeijão light.</p>
+                                <p> > 30g de queijo muçarela.</p>
+                                <p> > 5g de queijo parmesão ralado.</p>
+                                <span class="strong">Modo de preparo:</span>
+                                <p> > Processe o frango e acrescente os temperos da sua preferência.</p>
+                                <p> > Abra uma papel filme e coloque o frango já moído fazendo como se fosse uma massa.
+                                </p>
+                                <p> > Recheei com o que quiser, mas nessa receita leva requeijão light, muçarela e
+                                    tomate e
+                                    orégano </p>
+                                <span class="strong"></span>
+                                <p> > Feche bem a massa para o queijo não vazar pelos lados.</p>
+                                <p> > Leve na air fryer por 20 min a 200°</p>
+                            </div>
+                            <div>
+                                <button class="card__btn popover__btn" popovertarget="7">fechar</button>
+                            </div>
                         </div>
                         <a class="card__actions__a"
                             href="https://www.instagram.com/reel/DCP-5Lby7pL/?igsh=MXJwbTNuNXNwdzliYQ==" target="_blank"
-                            aria-label="Link da receita">Link da receita</a>
+                            rel="noopener noreferrer" aria-label="Link da receita">link da receita
+                        </a>
                     </div>
                 </div>
             </article>
@@ -197,22 +241,28 @@
             <article class="cards__card">
                 <img class="card__img" src="img/Pãozinho delícia batata.png" alt="Imagem Pãozinho delícia batata">
                 <div class="card__text">
-                    <p class="card__text__p">Pãozinho delícia batata</p>
+                    <h3 class="card__text__title">pãozinho delícia batata</h3>
                     <div class="card__actions">
                         <button class="card__btn" type="button" popovertarget="8">ver receita</button>
-                        <div id="8" popover>
-                            <span class="strong">ingredientes:</span>
-                            <p> > duas batatas grandes.</p>
-                            <P> > 80g amido de milho.</P>
-                            <p> > sal.</p>
-                            <span class="strong">modo de prepapro:</span>
-                            <p> > misture bem o amido com a batata e adicione o sal.</p>
-                            <p> > faça bolinhas com a massa e recheei com o que você quiser.</p>
-                            <p> > leve a uma frigideira e deixe dourar.</p>
+                        <div class="popover" id="8" popover>
+                            <div class="popover__text">
+                                <span class="strong">Ingredientes:</span>
+                                <p> > Duas batatas grandes.</p>
+                                <P> > 80g amido de milho.</P>
+                                <p> > Sal.</p>
+                                <span class="strong">Modo de preparo:</span>
+                                <p> > Misture bem o amido com a batata e adicione o sal.</p>
+                                <p> > Faça bolinhas com a massa e recheei com o que você quiser.</p>
+                                <p> > Leve a uma frigideira e deixe dourar.</p>
+                            </div>
+                            <div>
+                                <button class="card__btn popover__btn" popovertarget="8">fechar</button>
+                            </div>
                         </div>
                         <a class="card__actions__a"
                             href="https://www.instagram.com/reel/DBMh5YDS0wC/?igsh=MWZoamhqMTFtbjJhaQ==" target="_blank"
-                            aria-label="Link da receita">Link da receita</a>
+                            rel="noopener noreferrer" aria-label="Link da receita">link da receita
+                        </a>
                     </div>
                 </div>
             </article>
@@ -220,32 +270,37 @@
             <article class="cards__card">
                 <img class="card__img" src="img/tapioca.png" alt="Imagem Tapioca saborisada com café">
                 <div class="card__text">
-                    <p class="card__text__p">Tapioca saborisada com café</p>
+                    <h3 class="card__text__title">tapioca saborisada com café</h3>
                     <div class="card__actions">
-                        <button class="card__btn" type="button" popovertarget="10">ver receita</button>
-                        <div id="10" popover>
-                            <span class="strong">ingredientes:</span>
-                            <p> > 250g de polvilho doce.</p>
-                            <p> > 160ml de café Extraforte.</p>
-                            <p> > doce de leite a gosto para rechear.</p>
-                            <span class="strong">modo de preparo:</span>
-                            <p> > misture o polvilho com o café, vá mexendo e acrescentando o café aos poucos, até a
-                                massa
-                                pegar o ponto, que modela ao aperta-la.</p>
-                            <p> > se a massa ficou muito seca, adicione mais café.</p>
-                            <p> > se a massa ficou muito úmida, adicione mais polvilho.</p>
-                            <p> > o ideal é deixa-la com a textura parecida com a da goma de tapioca.</p>
-                            <p> > deixe descansar por 10 minutos.</p>
-                            <p> > peneire com uma peneira não tão fina</p>
-                            <p> > ma frigideira bem quente, espalhe uma quantidade generosa da massa – não faça uma
-                                camada
-                                muito fina, assim a tapioca não racha.</p>
-                            <p> > deixe ate firmar e vire logo em seguida para não ressecar.</p>
-                            <p> > finalize com doce de leite a gosto</p>
+                        <button class="card__btn" type="button" popovertarget="9">ver receita</button>
+                        <div class="popover" id="9" popover>
+                            <div class="popover__text">
+                                <span class="strong">Ingredientes:</span>
+                                <p> > 250g de polvilho doce.</p>
+                                <p> > 160ml de café Extraforte.</p>
+                                <p> > Doce de leite a gosto para rechear.</p>
+                                <span class="strong">Modo de preparo:</span>
+                                <p> > Misture o polvilho com o café, vá mexendo e acrescentando o café aos poucos, até a
+                                    massa
+                                    pegar o ponto, que modela ao aperta-la.</p>
+                                <p> > Se a massa ficou muito seca, adicione mais café.</p>
+                                <p> > Se a massa ficou muito úmida, adicione mais polvilho.</p>
+                                <p> > O ideal é deixa-la com a textura parecida com a da goma de tapioca.</p>
+                                <p> > Deixe descansar por 10 minutos.</p>
+                                <p> > Peneire com uma peneira não tão fina</p>
+                                <p> >Em uma frigideira bem quente, espalhe uma quantidade generosa da massa – não faça
+                                    uma camada muito fina, assim a tapioca não racha.</p>
+                                <p> > Deixe ate firmar e vire logo em seguida para não ressecar.</p>
+                                <p> > Finalize com doce de leite a gosto</p>
+                            </div>
+                            <div>
+                                <button class="card__btn popover__btn" popovertarget="9">fechar</button>
+                            </div>
                         </div>
                         <a class="card__actions__a"
                             href="https://www.instagram.com/reel/DCDAVxNSvO3/?igsh=Zm1hYnowb2VoYXV2" target="_blank"
-                            aria-label="Link da receita">Link da receita</a>
+                            rel="noopener noreferrer" aria-label="Link da receita">link da receita
+                        </a>
                     </div>
                 </div>
             </article>
