@@ -12,7 +12,7 @@
 
 - Botões dentro dos popovers para o fechamento dos mesmos.
 
--O layout geral da página.
+- O layout geral da página.
 
 ## O que precisa ser feito?
 
