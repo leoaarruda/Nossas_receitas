@@ -10,8 +10,10 @@
 
 - Popovers para a visualização das receitas.
 
-- Botões dento dos popovers para o fechamento dos mesmos.
+- Botões dentro dos popovers para o fechamento dos mesmos.
+
+-O layout geral da página.
 
 ## O que precisa ser feito?
 
-- Tornar a página totalmente responsiva.
+Tornar a página totalmente responsiva.
