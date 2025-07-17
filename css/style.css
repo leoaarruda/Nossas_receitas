@@ -68,11 +68,15 @@
     letter-spacing: 1px;
 }
 
+.cards--shadow {
+    box-shadow: -7px 2px 14px 0px rgba(0, 0, 0, 0.45);
+    max-width: 75%;
+    margin: 0 auto;
+    border-radius: 1rem;
+}
+
 .cards {
     background-color: var(--cards-color);
-    /* border: 2px solid var(--secundary-color); */
-    border-radius: 1rem;
-    max-width: 75%;
     max-height: 75dvh;
     padding: 1.8rem;
     margin: 0 auto;
@@ -91,16 +95,15 @@
     margin: 1.2rem 0;
     outline: 2px solid var(--secundary-color);
     border-radius: 1rem;
-    animation: fade linear both;
+    animation: 1ms fade linear both;
     animation-timeline: view();
     animation-range: entry 1% cover 40%;
-    box-shadow: -7px 0px 14px 0px rgba(0, 0, 0, 0.45);
+    box-shadow: -7px 2px 14px 0px rgba(0, 0, 0, 0.45);
     transition: transform .3s linear;
-}
 
-.cards__card:hover {
-    transform: scale(1.04);
-    transition: transform .4s linear;
+    &:hover {
+        transform: scale(1.04);
+    }
 }
 
 @keyframes fade {
@@ -116,9 +119,8 @@
 .card__img {
     width: 14.375rem;
     height: 11.875rem;
-    margin-bottom: -4.1px;
-    /* EU não consegui resolver essa margin-botton negativa */
     border-radius: 1rem 1rem 0 0;
+    display: block;
 }
 
 .card__text__title {
@@ -128,12 +130,12 @@
 }
 
 .card__text {
-    border-top: 1px solid var(--secundary-color);
+    border-top: 2px solid var(--secundary-color);
     background-color: var(--cards-color);
     color: var(--secundary-color);
     border-radius: 0 0 1rem 1rem;
     height: 24%;
-    padding: .4rem 0 .6rem;
+    padding: .3rem 0 .6rem;
 }
 
 .card__actions {
@@ -151,11 +153,19 @@
     outline: 1.5px solid var(--secundary-color);
     border-radius: 5px;
     cursor: pointer;
+
+    &:hover {
+        opacity: 0.8;
+    }
 }
 
 .card__actions__btn:focus, .card__actions__a:focus {
     outline: 2px solid var(--secundary-color);
     outline-offset: 2px;
+}
+
+.card__actions__a:hover {
+    text-decoration: underline;
 }
 
 :popover-open {
@@ -194,15 +204,7 @@
     font-weight: var(--weight-600);
     text-decoration: none;
     color: var(--secundary-color);
-    transition: transform .5s ease;
-}
-
-.card__actions__btn:hover, .card__actions__a:hover {
-    opacity: 0.8;
-}
-
-.card__actions__a:hover {
-    transform: scale(1.05);
+    transition: transform .5s ease-in-out;
 }
 
 ::backdrop {
@@ -242,7 +244,7 @@
     opacity: .8;
 }
 
-@media (min-width: 360px) and (max-width: 844px) {
+@media screen and (min-width: 360px) and (max-width: 844px) {
     .hero__banner__text {
         font-size: 3.5rem;
         letter-spacing: 0;
@@ -296,7 +298,7 @@
     }
 }
 
-@media (min-width: 355px) and (max-width: 359pc){
+@media screen and(min-width: 22.19em) and (max-width: 22.44em) {
 
     .footer__info {
         max-width: 65dvw;
