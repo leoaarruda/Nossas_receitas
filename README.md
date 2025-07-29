@@ -14,8 +14,8 @@
 
 - O layout geral da página.
 
-- Responsividade Mobile 
+- Responsividade Mobile.
 
 ## O que precisa ser feito?
 
-Responsividade para tablets e PCs
+ - Responsividade para tablets e PCs.
