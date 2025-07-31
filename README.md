@@ -14,8 +14,10 @@
 
 - O layout geral da página.
 
-- Responsividade Mobile.
+- Responsividade.
 
-## O que precisa ser feito?
+- Usada a metodologia BEM no HTML
 
- - Responsividade para tablets e PCs.
+## Próximas atualizações
+
+- Futuramente com o aprendizado de Javascript, colocar pesquisar e fazer interação com banco de dados onde as receitas não mais estarão no HTML.

@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Sevillana&display=swap');
 
 :root {
-    --font-title: "Sevillana", serif;
-    --font-text: "Raleway", serif;
+    --font-title: "Sevillana", sans-serif ;
+    --font-text: "Raleway", sans-serif ;
     --weight-400: 400;
     --weight-600: 600;
     --primary-color: #bcc584;
-    --secundary-color: #5a5e3f;
+    --secondary-color: #5a5e3f;
     --tertiary-color: #FFF;
     --cards-color: rgb(250, 235, 215);
 }
@@ -58,7 +58,7 @@
 }
 
 .main__title {
-    color: var(--secundary-color);
+    color: var(--secondary-color);
     font-size: 2.5rem;
     letter-spacing: 1px;
 }
@@ -78,7 +78,7 @@
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    overflow-y: scroll;
+    overflow-y: auto;
     clip-path: inset(0 0 0 0 round 1rem);
 }
 
@@ -88,7 +88,7 @@
     max-width: 250px;
     max-height: 500px;
     margin: 1.2rem 0;
-    outline: 2px solid var(--secundary-color);
+    outline: 2px solid var(--secondary-color);
     border-radius: 1rem;
     animation: 1ms fade linear both;
     animation-timeline: view();
@@ -116,7 +116,6 @@
 .card__img {
     width: 15.625rem;
     height: 13.75rem;
-    width: fit-content;
     border-radius: 1rem 1rem 0 0;
     display: block;
 }
@@ -142,11 +141,11 @@
 
 .card__btn {
     padding: .2rem .5rem;
-    color: var(--secundary-color);
+    color: var(--secondary-color);
     font-weight: var(--weight-600);
     background-color: var(--primary-color);
     border: none;
-    outline: 1.5px solid var(--secundary-color);
+    outline: 1.5px solid var(--secondary-color);
     border-radius: 5px;
     cursor: pointer;
 
@@ -156,7 +155,7 @@
 }
 
 .card__btn:focus, .card__a:focus {
-    outline: 2px solid var(--secundary-color);
+    outline: 2px solid var(--secondary-color);
     outline-offset: 2px;
 }
 
@@ -164,7 +163,7 @@
     font-size: .88rem;
     font-weight: var(--weight-600);
     text-decoration: none;
-    color: var(--secundary-color);
+    color: var(--secondary-color);
     transition: transform .5s ease-in-out;
 }
 
@@ -174,8 +173,8 @@
 
 
 :popover-open {
-    outline: 2px solid var(--secundary-color);
-    width: 80dvw;
+    outline: 2px solid var(--secondary-color);
+    width: 50dvw;
     height: 75dvh;
     border-radius: 12px;
     line-height: 2rem;
@@ -227,7 +226,7 @@
 .footer {
     height: 8dvh;
     border-top: 2px solid var(--cards-color);
-    background-color: var(--secundary-color);
+    background-color: var(--secondary-color);
 }
 
 .footer__info {
@@ -256,7 +255,7 @@
     opacity: .8;
 }
 
-@media screen and (min-width: 319px) and (max-width: 321px) {
+@media screen and (min-width: 319px) and (max-width: 358px) {
 
     .hero__text {
         margin-top: 20rem;
@@ -312,7 +311,7 @@
     }
 
     :popover-open {
-        width: 90dvw;
+        width: 80dvw;
         height: 80dvh;
 
         h4 {
