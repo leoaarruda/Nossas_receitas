@@ -20,4 +20,4 @@
 
 ## Próximas atualizações
 
-- Futuramente com o aprendizado de Javascript, colocar pesquisar e fazer interação com banco de dados onde as receitas não mais estarão no HTML.
+-Futuramente, com o aprendizado de JavaScript, pretendo implementar um campo de pesquisa e integrar um banco de dados para armazenar as receitas, eliminando a necessidade de mantê-las diretamente no HTML.

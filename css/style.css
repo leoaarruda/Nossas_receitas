@@ -195,10 +195,10 @@
     }
 }
 
-
 .popover__text {
     text-align: left;
     width: 95%;
+    font-weight: 420;
 }
 
 .popover__btn {
